@@ -1,6 +1,6 @@
 {
   "name": "sorted-cmp-array",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a sorted array, with user-supplied sorting.",
   "main": "index.js",
   "repository": {
