@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/nathan7/sorted-cmp-array/issues"
   },
-  "homepage": "https://github.com/nathan7/sorted-cmp-array"
+  "homepage": "https://github.com/nathan7/sorted-cmp-array",
+  "dependencies": {
+    "binary-search": "^1.2.0"
+  }
 }
