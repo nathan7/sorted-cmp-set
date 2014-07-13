@@ -1,22 +1,22 @@
 {
-  "name": "sorted-cmp-array",
-  "version": "1.0.1",
-  "description": "a sorted array, with user-supplied sorting.",
+  "name": "sorted-cmp-set",
+  "version": "1.0.0",
+  "description": "a sorted set, with user-supplied sorting.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/nathan7/sorted-cmp-array.git"
+    "url": "git://github.com/nathan7/sorted-cmp-set.git"
   },
   "keywords": [
     "sorted",
-    "array"
+    "set"
   ],
   "author": "Nathan Zadoks",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nathan7/sorted-cmp-array/issues"
+    "url": "https://github.com/nathan7/sorted-cmp-set/issues"
   },
-  "homepage": "https://github.com/nathan7/sorted-cmp-array",
+  "homepage": "https://github.com/nathan7/sorted-cmp-set",
   "dependencies": {
     "binary-search": "^1.2.0"
   }

@@ -1,7 +1,7 @@
 'use strict';
 var search = require('binary-search')
 
-function SortedArray(cmp, arr) {
+function SortedSet(cmp, arr) {
   if (typeof cmp != 'function')
     throw new TypeError('comparator must be a function')
 
@@ -9,7 +9,7 @@ function SortedArray(cmp, arr) {
   this.cmp = cmp
 }
 
-SortedArray.prototype.insert = function(element) {
+SortedSet.prototype.insert = function(element) {
   var index = search(this.arr, element, this.cmp)
   if (index >= 0) {
     this.arr[index] = element
@@ -20,14 +20,14 @@ SortedArray.prototype.insert = function(element) {
   return true
 }
 
-SortedArray.prototype.indexOf = function(element) {
+SortedSet.prototype.indexOf = function(element) {
   var index = search(this.arr, element, this.cmp)
   return index >= 0
     ? index
     : -1
 }
 
-SortedArray.prototype.remove = function(element) {
+SortedSet.prototype.remove = function(element) {
   var index = search(this.arr, element, this.cmp)
   if (index < 0)
     return false

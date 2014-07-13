@@ -1,34 +1,34 @@
-# sorted-cmp-array
+# sorted-cmp-set
 
-  a sorted array, with user-supplied sorting.
+  a sorted set, with user-supplied sorting.
 
 ## Installation
 
-    npm install sorted-cmp-array
+    npm install sorted-cmp-set
 
 ## API
   
-  `var SortedArray = require('sorted-cmp-array')`
+  `var SortedSet = require('sorted-cmp-set')`
 
-### new SortedArray(function cmp(a, b) → -1|0|-1, arr = [])
+### new SortedSet(function cmp(a, b) → -1|0|-1, arr = [])
 
-  Creates a new sorted array with the supplied comparison function, backed by either a fresh array or a supplied one.
+  Creates a new sorted set with the supplied comparison function, backed by either a fresh array or a supplied one.
 
-#### sortedArray.arr
+#### sortedSet.arr
 
   The backing array.
 
-#### sortedArray.insert(element) → Boolean
+#### sortedSet.insert(element) → Boolean
 
-  Inserts an element into the array.
+  Inserts an element into the set.
   Returns `true` if it *added* the element, `false` if it *replaced* an existing element.
 
-#### sortedArray.indexOf(element) → Integer
+#### sortedSet.indexOf(element) → Integer
 
   Returns the index of the element, or `-1` if it wasn't found.
 
-#### sortedArray.remove(element) → Boolean
+#### sortedSet.remove(element) → Boolean
 
-  Removes an element from the array.
+  Removes an element from the set.
   Returns `true` if the element was removed, `false` if it wasn't there in the first place.
 
